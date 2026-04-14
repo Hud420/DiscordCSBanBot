@@ -50,7 +50,7 @@ client.on('messageCreate', async (message) => {
   const args = message.content.split(" ");
   const command = args[0];
 
-  if (command === "!ban") {
+  if (command === "!csban") {
     const user = message.mentions.users.first();
     const timeArg = args[2];
     const reason = args.slice(3).join(" ") || "no reason";
